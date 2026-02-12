@@ -1,2 +1,49 @@
-background:url("portada.jpg") center/cover no-repeat;
-<img src="renderfrente.jpg">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parque Porvenir | Lambaré</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --verde:#2f4f3f;
+    --verde-claro:#4f6f57;
+    --fondo:#f4f6f2;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:var(--fondo);
+    color:#2f3e2f;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:url("portada.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.h
