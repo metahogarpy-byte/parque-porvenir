@@ -46,4 +46,141 @@ body{
     background:rgba(0,0,0,0.45);
 }
 
-.h
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    background:var(--verde);
+    padding:14px 32px;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:var(--verde-claro);
+}
+
+/* SECCIONES */
+
+section{
+    padding:90px 20px;
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+section h2{
+    font-family:'Playfair Display', serif;
+    font-size:36px;
+    margin-bottom:25px;
+}
+
+section p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* IMAGEN */
+
+.imagen img{
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* PRECIO */
+
+.precio{
+    background:var(--verde);
+    color:white;
+    padding:80px 20px;
+}
+
+.precio h2{
+    font-size:42px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1b2a20;
+    color:#ddd;
+    text-align:center;
+    padding:30px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:white;
+    font-size:22px;
+    padding:16px 18px;
+    border-radius:50%;
+    text-decoration:none;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Parque Porvenir</h1>
+        <p>Tu terreno en el barrio más exclusivo de Lambaré</p>
+        <a href="https://wa.me/595XXXXXXXXX" class="btn">Solicitar Información</a>
+    </div>
+</header>
+
+<section>
+    <h2>Un entorno exclusivo</h2>
+    <p>
+        Un proyecto habitacional pensado para vivir con privacidad,
+        tranquilidad y calidad de vida en un entorno consolidado.
+    </p>
+</section>
+
+<section class="imagen">
+    <img src="renderfrente.jpg" alt="Ingreso Parque Porvenir">
+</section>
+
+<section class="precio">
+    <h2>Desde 70.455 USD</h2>
+    <p>20% de entrega · Financiación hasta 24 meses</p>
+    <a href="https://wa.me/595XXXXXXXXX" class="btn">Agendar Visita</a>
+</section>
+
+<footer>
+    © 2026 Parque Porvenir · Barrio Felicidad · Lambaré
+</footer>
+
+<a href="https://wa.me/595XXXXXXXXX" class="whatsapp">💬</a>
+
+</body>
+</html>
